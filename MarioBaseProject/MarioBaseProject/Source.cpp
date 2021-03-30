@@ -8,13 +8,21 @@ SDL_Window* g_window = nullptr;
 
 bool InitSDL();
 void CloseSDL();
+bool Update();
 
 
 int main(int argc, char* args[])
 {
 	if (InitSDL())
 	{
-		SDL_Delay(5000);
+		//flag to check if we want to quit
+		bool quit = false;
+		
+		//loops and checks continously until update returns true
+		while (!quit)
+		{
+			quit = Update();
+		}
 	}
 
 	CloseSDL();
@@ -61,5 +69,30 @@ void CloseSDL()
 	IMG_Quit();
 	SDL_Quit();
 
+
+}
+
+bool Update()
+{
+	//event handler
+	SDL_Event e;
+
+	//gets event (event variable e, determines what the event is)
+	SDL_PollEvent(&e);
+	//handles events
+	switch (e.type)
+	{
+		//click the 'X' to quit
+	case SDL_QUIT:
+		return true;
+		break;
+
+	//case SDLK_q:
+	//	switch (e.key.keysym.sym)
+	//		return true;
+	//		break;
+	}
+
+	return false;
 
 }
