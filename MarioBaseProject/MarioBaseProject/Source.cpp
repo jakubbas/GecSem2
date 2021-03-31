@@ -87,10 +87,21 @@ bool Update()
 		return true;
 		break;
 
+		
 	//case SDLK_q:
 	//	switch (e.key.keysym.sym)
 	//		return true;
 	//		break;
+	}
+
+	if (e.type == SDL_KEYDOWN)
+	{
+		switch (e.key.keysym.sym)
+		{
+		case SDLK_q:
+			return true;
+			break;
+		}
 	}
 
 	return false;
