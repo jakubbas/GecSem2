@@ -138,16 +138,7 @@ bool Update()
 		case SDLK_q:
 			return true;
 			break;
-
-		case SDLK_UP:
-			angle = angle + 10;
-			break;
-
-		case SDLK_DOWN:
-			angle = angle - 10;
-			break;
 		}
-
 	}
 
 	return false;
