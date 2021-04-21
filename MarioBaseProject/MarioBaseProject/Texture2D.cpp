@@ -81,4 +81,3 @@ void Texture2D::Render(Vector2D new_position, SDL_RendererFlip flip, double angl
 //int Texture2D::GetHeight() {return  m_height;}
 
 
-//tutorial 5 task 9
