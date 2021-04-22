@@ -4,6 +4,7 @@
 #include "GameScreen.h" //SDL.h gotten from gamescreen
 #include "Commons.h"
 #include "Character.h"
+#include "LevelMap.h"
 
 class Character; 
 class Texture2D; //Forward class declaration
@@ -21,6 +22,8 @@ public:
 
 private:
 	bool SetUpLevel();
+	void SetLevelMap();
+	LevelMap* m_level_map;
 	Character* character1;
 	Character* character2;
 };
