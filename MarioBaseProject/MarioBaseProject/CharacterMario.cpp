@@ -1,23 +1,52 @@
 #include "CharacterMario.h"
-#include "constants.h"
+
 CharacterMario::CharacterMario(SDL_Renderer* renderer, string imagePath, Vector2D start_position) : Character(renderer, imagePath, start_position)
+{
+
+}
+
+CharacterMario::~CharacterMario()
 {
 
 }
 
 void CharacterMario::Update(float deltaTime, SDL_Event e)
 {
-	if (m_jumping)
+	switch (e.type)
 	{
-		//adjust posititon
-		m_position.y -= m_jump_force * deltaTime;
-		//reduce jump force
-		m_jump_force -= JUMP_FORCE_DECREMENT * deltaTime;
-
-		//is jump force < 0?
-		if (m_jump_force <= 0.0f)
+	case SDL_KEYDOWN:
+		switch (e.key.keysym.sym)
 		{
-			m_jumping = false;
+		case SDLK_LEFT:
+			m_moving_left = true;
+			break;
+		case SDLK_RIGHT:
+			m_moving_right = true;
+			break;
+		case SDLK_UP:
+			if (m_can_jump)
+			{
+				Jump();
+			}
 		}
+		break;
+
+	case SDL_KEYUP:
+		switch (e.key.keysym.sym)
+		{
+		case SDLK_LEFT:
+			m_moving_left = false;
+			break;
+		case SDLK_RIGHT:
+			m_moving_right = false;
+			break;
+		case SDLK_UP:
+			m_can_jump = false;
+			break;
+		}
+		break;
 	}
+
+	Character::Update(deltaTime, e);
+
 }
