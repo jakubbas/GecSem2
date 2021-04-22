@@ -1,7 +1,4 @@
-﻿  GameScreen.cpp
-  GameScreenLevel1.cpp
-  GameScreenManager.cpp
-  Source.cpp
+﻿  Collisions.cpp
   Texture2D.cpp
 D:\Uni\Repositories\GecSem2\MarioBaseProject\MarioBaseProject\Texture2D.cpp(72,41): warning C4838: conversion from 'float' to 'int' requires a narrowing conversion
 D:\Uni\Repositories\GecSem2\MarioBaseProject\MarioBaseProject\Texture2D.cpp(72,41): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
