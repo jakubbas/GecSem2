@@ -1,6 +1,7 @@
 #include "Character.h"
-#include "Texture2D.h"
 #include "constants.h"
+#include "CharacterLuigi.h"
+#include "CharacterMario.h"
 
 Character::Character(SDL_Renderer* renderer, string imagePath, Vector2D start_position)
 {
@@ -67,7 +68,8 @@ void Character::Update(float deltaTime, SDL_Event e)
 		//m_position.y += 1;
 
 	}
-	switch (e.type)
+	
+	/*switch (e.type)
 	{
 	case SDL_KEYDOWN:
 		switch (e.key.keysym.sym)
@@ -100,7 +102,7 @@ void Character::Update(float deltaTime, SDL_Event e)
 			break;
 		}
 		break;
-	}
+	}*/
 
 
 }

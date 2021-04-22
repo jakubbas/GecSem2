@@ -4,10 +4,10 @@
 #include "Character.h"
 class CharacterLuigi : public Character
 {
-protected:
+public:
 	CharacterLuigi(SDL_Renderer* renderer, string imagePath, Vector2D start_position);
 	~CharacterLuigi();
-
+	virtual void Update(float deltaTime, SDL_Event e);
 };
 
 #endif

@@ -21,7 +21,8 @@ public:
 
 private:
 	bool SetUpLevel();
-	Character* my_character;
+	Character* character1;
+	Character* character2;
 };
 
 
