@@ -28,8 +28,10 @@ protected:
 	virtual void AddGravity(float deltaTime);
 	virtual void Jump();
 
-
+	//+= GRAVITY * deltaTime
 public:
+	bool isJumping() { return m_jumping; }
+	float CancelJump() { return m_jump_force = 0; }
 	Character(SDL_Renderer* renderer, string imagePath, Vector2D start_position, LevelMap* map);
 	~Character();
 	
