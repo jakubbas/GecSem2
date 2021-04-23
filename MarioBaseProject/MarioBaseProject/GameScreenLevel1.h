@@ -5,6 +5,8 @@
 #include "Commons.h"
 #include "Character.h"
 #include "LevelMap.h"
+#include "CharacterKoopa.h"
+#include <vector>
 
 class Character; 
 class Texture2D; //Forward class declaration
@@ -22,13 +24,18 @@ public:
 
 
 private:
+	vector<CharacterKoopa*> m_enemies;
 	bool SetUpLevel();
 	void DoScreenshake();
 	void SetLevelMap();
+	void UpdateEnemies(float deltaTime, SDL_Event e);
+	void CreateKoopa(Vector2D position, FACING direction, float speed);
+
 	PowBlock* m_pow_block;
 	LevelMap* m_level_map;
 	Character* character1;
 	Character* character2;
+	Character* koopa;
 	bool m_screenshake;
 	float m_shake_time;
 	float m_wobble;
