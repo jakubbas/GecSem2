@@ -1,5 +1,6 @@
 #include "LevelMap.h"
-
+#include <iostream>
+using namespace std;
 /*
  * when making a map, remember:
  * 0 = empty space,	1 = blocked/occupied space
