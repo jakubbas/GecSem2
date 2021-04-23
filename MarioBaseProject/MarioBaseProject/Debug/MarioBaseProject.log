@@ -1,13 +1,4 @@
-﻿  PowBlock.cpp
-D:\Uni\Repositories\GecSem2\MarioBaseProject\MarioBaseProject\PowBlock.cpp(14,44): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
-D:\Uni\Repositories\GecSem2\MarioBaseProject\MarioBaseProject\PowBlock.cpp(15,42): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
-D:\Uni\Repositories\GecSem2\MarioBaseProject\MarioBaseProject\PowBlock.cpp(34,12): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
-D:\Uni\Repositories\GecSem2\MarioBaseProject\MarioBaseProject\PowBlock.cpp(37,43): warning C4838: conversion from 'float' to 'int' requires a narrowing conversion
-D:\Uni\Repositories\GecSem2\MarioBaseProject\MarioBaseProject\PowBlock.cpp(37,43): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
-D:\Uni\Repositories\GecSem2\MarioBaseProject\MarioBaseProject\PowBlock.cpp(37,62): warning C4838: conversion from 'float' to 'int' requires a narrowing conversion
-D:\Uni\Repositories\GecSem2\MarioBaseProject\MarioBaseProject\PowBlock.cpp(37,62): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
-D:\Uni\Repositories\GecSem2\MarioBaseProject\MarioBaseProject\PowBlock.cpp(41,66): warning C4838: conversion from 'float' to 'int' requires a narrowing conversion
-D:\Uni\Repositories\GecSem2\MarioBaseProject\MarioBaseProject\PowBlock.cpp(41,66): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
-D:\Uni\Repositories\GecSem2\MarioBaseProject\MarioBaseProject\PowBlock.cpp(41,85): warning C4838: conversion from 'float' to 'int' requires a narrowing conversion
-D:\Uni\Repositories\GecSem2\MarioBaseProject\MarioBaseProject\PowBlock.cpp(41,85): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+﻿  Character.cpp
+D:\Uni\Repositories\GecSem2\MarioBaseProject\MarioBaseProject\Character.h(50,47): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+D:\Uni\Repositories\GecSem2\MarioBaseProject\MarioBaseProject\Character.h(50,23): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
   MarioBaseProject.vcxproj -> D:\Uni\Repositories\GecSem2\MarioBaseProject\Debug\MarioBaseProject.exe

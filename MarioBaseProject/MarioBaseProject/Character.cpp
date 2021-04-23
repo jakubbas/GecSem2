@@ -1,11 +1,9 @@
 #include "Character.h"
 #include "constants.h"
-#include "CharacterLuigi.h"
-#include "CharacterMario.h"
-
 Character::Character(SDL_Renderer* renderer, string imagePath, Vector2D start_position, LevelMap* map)
 {
 	m_current_level_map = map;
+	bool isAlive = true;
 	m_renderer = renderer;
 	m_position = start_position;
 	m_texture = new Texture2D(m_renderer);
@@ -13,6 +11,7 @@ Character::Character(SDL_Renderer* renderer, string imagePath, Vector2D start_po
 	m_moving_left = false;
 	m_moving_right = false;
 	m_collision_radius = 15.0f;
+	m_alive = true;
 	if (!m_texture->LoadFromFile(imagePath))
 	{
 		cout << "Failed to load background texture HERE" << std::endl;
